@@ -3,6 +3,14 @@ DTL (Dungeon Template Library)
 
 [![DTL](https://raw.githubusercontent.com/Kasugaccho/AsLib/master/aslib/Picture/Title/aslib150.png "DTL")](https://github.com/Kasugaccho/AsLib)
 
+# Compiler
+
+|Compiler|Pass|Test|
+|:---|:---|:---|
+|MSVC|![cl](https://img.shields.io/badge/cl%2014.10-passing-brightgreen.svg)|None|
+|GCC|![gcc](https://img.shields.io/badge/gcc%205.1.0-passing-yellow.svg)|[Wandbox](https://wandbox.org/permlink/8MgUepZH8hYIi4dL)|
+|Clang|![clang](https://img.shields.io/badge/clang%203.5.0-passing-brightgreen.svg)|[Wandbox](https://wandbox.org/permlink/r0PaawnBDMxH6RBa)|
+
 # Overview
 
 ![rl1](https://github.com/Kasugaccho/DTL_RogueLike/blob/master/picture/rl.gif)
