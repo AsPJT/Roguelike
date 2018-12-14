@@ -8,7 +8,7 @@ DTL (Dungeon Template Library)
 |Compiler|Pass|Test|
 |:---|:---|:---|
 |MSVC|![cl](https://img.shields.io/badge/cl%2014.10-passing-brightgreen.svg)|None|
-|GCC|![gcc](https://img.shields.io/badge/gcc%205.1.0-passing-yellow.svg)|[Wandbox](https://wandbox.org/permlink/8MgUepZH8hYIi4dL)|
+|GCC|![gcc](https://img.shields.io/badge/gcc%205.1.0-passing-brightgreen.svg)|[Wandbox](https://wandbox.org/permlink/zlwCfiuu0lE3zwM9)|
 |Clang|![clang](https://img.shields.io/badge/clang%203.5.0-passing-brightgreen.svg)|[Wandbox](https://wandbox.org/permlink/r0PaawnBDMxH6RBa)|
 
 # Overview
