@@ -20,10 +20,10 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Random.hpp">
+    <ClInclude Include="RogueLike.hpp">
       <Filter>ソース ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="RogueLike.hpp">
+    <ClInclude Include="DungeonRandom.hpp">
       <Filter>ソース ファイル</Filter>
     </ClInclude>
   </ItemGroup>

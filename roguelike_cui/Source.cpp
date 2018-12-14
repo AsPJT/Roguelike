@@ -1,8 +1,7 @@
 #include "RogueLike.hpp"
-//#include <vector>
+#include <cstdint>
 #include <array>
 #include <iostream>
-#include <cstdint>
 
 template<typename vArray>
 constexpr void print(const vArray& tilev) {
@@ -22,8 +21,6 @@ constexpr void print(const vArray& tilev) {
 
 int main() {
 	std::array<std::array<std::int32_t, 63>, 31> col{ {} };
-	//std::vector<std::array<uint8_t, 63>> col(31, { {} });
-	//std::vector<std::vector<uint8_t>> col(31, std::vector<uint8_t>(63, 0));
 	dtl::RogueLike<std::int32_t> d(col, 20);
 	print(col);
 }

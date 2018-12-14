@@ -1,19 +1,25 @@
-#pragma once
-#ifndef ASCLL_PROJECT_GAME_MAP_LIBRARY_ROGUE_LIKE
-#define ASCLL_PROJECT_GAME_MAP_LIBRARY_ROGUE_LIKE
+#ifndef INCLUDED_DUNGEON_TEMPLATE_LIBRARY_ROGUE_LIKE
+#define INCLUDED_DUNGEON_TEMPLATE_LIBRARY_ROGUE_LIKE
+//:::::----------::::::::::----------::::://
+//     Dungeon Template Library     //
+//          Made by Gaccho.          //
+// This code is licensed under CC0.  //
+//:::::----------::::::::::----------::::://
 
-#include "Random.hpp"
+#include <cstddef>
 #include <cstdint>
+#include "DungeonRandom.hpp"
 
+//Dungeon Template Library Namespace
 namespace dtl {
 	//四角形の位置と大きさ
 	template<typename Int_>
 	struct Rect {
 		Rect() = default;
 		//位置
-		Int_ x, y;
+		Int_ x{}, y{};
 		//大きさ
-		Int_ w, h;
+		Int_ w{}, h{};
 	};
 	//タイルID
 	enum TileType :std::size_t {
@@ -24,7 +30,7 @@ namespace dtl {
 		way_id,
 	};
 	//方角
-	enum DirectionType :size_t {
+	enum DirectionType :std::size_t {
 		direction_north,
 		direction_south,
 		direction_west,
@@ -38,18 +44,18 @@ namespace dtl {
 		//コンストラクタ
 		RogueLike() = default;
 		template<typename vArray>
-		constexpr RogueLike(vArray& vec_, const size_t way_max_) {
+		constexpr RogueLike(vArray& vec_, const std::size_t way_max_) {
 			create(vec_, way_max_);
 		}
 		//マップ生成
 		template<typename vArray>
-		constexpr void create(vArray& vec_, const size_t way_max_) {
+		constexpr void create(vArray& vec_, const std::size_t way_max_) {
 			room_rect.clear();
 			branch_point.clear();
 			//最初の部屋を生成
 			if (!makeRoom(vec_, (std::int_fast32_t)((vec_.empty()) ? 0 : vec_.front().size()) / 2, (std::int_fast32_t)(vec_.size()) / 2, (DirectionType)rnd(4))) return;
 			//機能配置
-			for (size_t i = 1; i < way_max_; ++i)
+			for (std::size_t i = 1; i < way_max_; ++i)
 				if (!createNext(vec_)) break;
 		}
 
@@ -62,26 +68,26 @@ namespace dtl {
 		//タイルを取得
 		template<typename vArray>
 		constexpr int_map_t getTileType(const vArray& vec_, const std::int_fast32_t x_, const std::int_fast32_t y_) const {
-			if (x_ >= ((vec_.empty()) ? 0 : vec_.front().size()) || y_ >= (vec_.size())) return (int_map_t)outside_wall_id;
+			if ((std::size_t)x_ >= ((vec_.empty()) ? (std::size_t)0 : vec_.front().size()) || (std::size_t)y_ >= (vec_.size())) return (int_map_t)outside_wall_id;
 			return vec_[y_][x_];
 		}
 		//タイルを置く
 		template<typename vArray>
-		constexpr void setTileType(vArray& vec_, const size_t x_, const size_t y_, const int_map_t tile_) const {
+		constexpr void setTileType(vArray& vec_, const std::size_t x_, const std::size_t y_, const int_map_t tile_) const {
 			vec_[y_][x_] = tile_;
 		}
 		template<typename vArray>
 		constexpr bool createNext(vArray& vec_) {
-			for (size_t i{}, r{}; i < (size_t)0xffff; ++i) {
+			for (std::size_t i{}, r{}; i < (std::size_t)0xffff; ++i) {
 				if (branch_point.empty()) break;
 
 				//部屋か通路の乱数面を選択
-				r = (size_t)rnd((std::int_fast32_t)branch_point.size());
+				r = (std::size_t)rnd((std::int_fast32_t)branch_point.size());
 				const auto& x{ rnd(branch_point[r].x, branch_point[r].x + branch_point[r].w - 1) };
 				const auto& y{ rnd(branch_point[r].y, branch_point[r].y + branch_point[r].h - 1) };
 
 				//方角カウンタ
-				for (size_t j{}; j < direction_count; ++j) {
+				for (std::size_t j{}; j < direction_count; ++j) {
 					if (!createNext(vec_, x, y, j)) continue;
 					branch_point.erase(branch_point.begin() + r);
 					return true;
@@ -90,7 +96,7 @@ namespace dtl {
 			return false;
 		}
 		template<typename vArray>
-		constexpr bool createNext(vArray& vec_, const std::int_fast32_t x, const std::int_fast32_t y, const size_t dir_) {
+		constexpr bool createNext(vArray& vec_, const std::int_fast32_t x, const std::int_fast32_t y, const std::size_t dir_) {
 			std::int_fast32_t dx{};
 			std::int_fast32_t dy{};
 			switch (dir_)
@@ -120,7 +126,7 @@ namespace dtl {
 			return false;
 		}
 		template<typename vArray>
-		constexpr bool makeRoom(vArray& vec_, const std::int_fast32_t x_, const std::int_fast32_t y_, const size_t dir_, const bool firstRoom_ = false) {
+		constexpr bool makeRoom(vArray& vec_, const std::int_fast32_t x_, const std::int_fast32_t y_, const std::size_t dir_, const bool firstRoom_ = false) {
 			constexpr std::int_fast32_t minRoomSize{ 3 };
 			constexpr std::int_fast32_t maxRoomSize{ 6 };
 
@@ -162,7 +168,7 @@ namespace dtl {
 			return false;
 		}
 		template<typename vArray>
-		constexpr bool makeWay(vArray& vec_, const std::int_fast32_t x_, const std::int_fast32_t y_, const size_t dir_) {
+		constexpr bool makeWay(vArray& vec_, const std::int_fast32_t x_, const std::int_fast32_t y_, const std::size_t dir_) {
 			constexpr std::int_fast32_t minWayLength{ 3 };
 			constexpr std::int_fast32_t maxWayLength{ 15 };
 
@@ -240,4 +246,5 @@ namespace dtl {
 
 	};
 }
-#endif // ASCLL_PROJECT_GAME_MAP_LIBRARY_ROGUE_LIKE
+
+#endif //Included Dungeon Template Library
