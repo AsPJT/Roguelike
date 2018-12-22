@@ -7,7 +7,7 @@
 
 # Compiler
 
-|Compiler|Pass|Test|
+|Compiler|Pass_C++14|Test|
 |:---|:---|:---|
 |MSVC|![cl](https://img.shields.io/badge/cl%2014.10-passing-brightgreen.svg)|None|
 |GCC|![gcc](https://img.shields.io/badge/gcc%205.1.0-passing-brightgreen.svg)|[Wandbox](https://wandbox.org/permlink/zlwCfiuu0lE3zwM9)|
