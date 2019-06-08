@@ -1,7 +1,7 @@
 ﻿# [RogueLike(Dungeon Template Library) ](https://github.com/Kasugaccho/DungeonTemplateLibrary)
 [<a href="http://creativecommons.org/publicdomain/zero/1.0/deed.ja"><img src="https://img.shields.io/badge/license-CC0-blue.svg"></a> <a href="https://github.com/Kasugaccho/AsLib"><img src="https://img.shields.io/badge/0.1.0-passing-brightgreen.svg"></a>](https://github.com/Kasugaccho/DungeonTemplateLibrary)
 
-[![DTL](https://github.com/Kasugaccho/DungeonTemplateLibrary/blob/master/Picture/DTL_logo.svg "DTL")](https://github.com/Kasugaccho/DungeonTemplateLibrary)
+[![Logo-GIF](https://kasugaccho.github.io/DungeonPicture/Picture/Logo/logo_color800_2.gif)](https://github.com/Kasugaccho/DungeonTemplateLibrary/wiki/API-reference)
 
 [DTL (Dungeon Template Library)](https://github.com/Kasugaccho/DungeonTemplateLibrary)
 
@@ -29,6 +29,5 @@ These codes are licensed under CC0.
 
 |E-mail:|wanotaitei@gmail.com|
 |:---|:---|
-|Twitter:|[@wanotaitei](https://twitter.com/wanotaitei)|
-|![svg](https://github.com/Kasugaccho/DungeonTemplateLibrary/blob/master/Picture/as_logo.svg)|**As Project**|
-|![gaccho](https://github.com/Kasugaccho/DungeonTemplateLibrary/blob/master/Picture/gaccho_icon.svg)|Made by Gaccho.|
+|![svg](https://Kasugaccho.github.io/DungeonPicture/Picture/as_logo.svg)|Made by **As Project**.|
+|![gaccho](https://Kasugaccho.github.io/DungeonPicture/Picture/gaccho_icon.svg)|Made by Gaccho.|
