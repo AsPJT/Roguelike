@@ -1,5 +1,5 @@
-﻿# [RogueLike(Dungeon Template Library) ](https://github.com/Kasugaccho/DungeonTemplateLibrary)
-[<a href="http://creativecommons.org/publicdomain/zero/1.0/deed.ja"><img src="https://img.shields.io/badge/license-CC0-blue.svg"></a> <a href="https://github.com/Kasugaccho/AsLib"><img src="https://img.shields.io/badge/0.1.0-passing-brightgreen.svg"></a>](https://github.com/Kasugaccho/DungeonTemplateLibrary)
+﻿# [RogueLike(Dungeon Template Library) ](https://github.com/Kasugaccho/DungeonTemplateLibrary) [![BSL-1.0](https://img.shields.io/badge/license-BSL--1.0-blue.svg)](https://github.com/Kasugaccho/DungeonTemplateLibrary/blob/master/LICENSE_1_0.txt)
+
 
 [![Logo-GIF](https://kasugaccho.github.io/DungeonPicture/Picture/Logo/logo_color800_2.gif)](https://github.com/Kasugaccho/DungeonTemplateLibrary/wiki/API-reference)
 
