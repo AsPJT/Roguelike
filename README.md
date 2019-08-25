@@ -15,8 +15,8 @@
 
 # Overview 💬
 
-![rl1](https://github.com/Kasugaccho/DTL_RogueLike/blob/master/picture/rl.gif)
-![rl4](https://github.com/Kasugaccho/DTL_RogueLike/blob/master/picture/rl4.gif)
+![rl1](https://Kasugaccho.github.io/DungeonPicture/Picture/Dungeon/nrl256.gif) 
+![rl2](https://Kasugaccho.github.io/DungeonPicture/Picture/Dungeon/nrl_player256.gif)
 
 # Example
 
