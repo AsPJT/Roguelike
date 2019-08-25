@@ -1,17 +1,15 @@
 ﻿# [RogueLike(Dungeon Template Library) ](https://github.com/Kasugaccho/DungeonTemplateLibrary) [![BSL-1.0](https://img.shields.io/badge/license-BSL--1.0-blue.svg)](https://github.com/Kasugaccho/DungeonTemplateLibrary/blob/master/LICENSE_1_0.txt)
 
 
-[![Logo-GIF](https://kasugaccho.github.io/DungeonPicture/Picture/Logo/logo_color800_2.gif)](https://github.com/Kasugaccho/DungeonTemplateLibrary/wiki/API-reference)
-
-[DTL (Dungeon Template Library)](https://github.com/Kasugaccho/DungeonTemplateLibrary)
+[![Logo-GIF](https://kasugaccho.github.io/DungeonPicture/Picture/Logo/logo_color800_2.gif)](https://github.com/Kasugaccho/DungeonTemplateLibrary)
 
 # Support Compiler 🔧
 
-|Compiler|Pass_C++14|Test|
-|:---|:---|:---|
-|MSVC|![cl](https://img.shields.io/badge/cl%2014.10-passing-brightgreen.svg)|None|
-|GCC|![gcc](https://img.shields.io/badge/gcc%205.1.0-passing-brightgreen.svg)|[Wandbox](https://wandbox.org/permlink/zlwCfiuu0lE3zwM9)|
-|Clang|![clang](https://img.shields.io/badge/clang%203.5.0-passing-brightgreen.svg)|[Wandbox](https://wandbox.org/permlink/r0PaawnBDMxH6RBa)|
+|Compiler|Run|
+|:---|:---|
+|MSVC|None|
+|GCC|[Wandbox](https://wandbox.org/permlink/mh9FPcIeSE4UyPkL)|
+|Clang|[Wandbox](https://wandbox.org/permlink/rH99RSoLGXrDu8CU)|
 
 # Overview 💬
 
