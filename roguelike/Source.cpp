@@ -1,72 +1,33 @@
-#define NOMINMAX
-#include <DxLib.h>
-#include "RogueLike.hpp"
-
+ï»¿#include "RogueLike.hpp"
 #include <array>
-#include <bitset>
+#include <iostream>
 
-constexpr int hachi{ 2 };
-//o—Í
-template<typename Vector_>
-void output(const Vector_& vec_) {
-	for (size_t y{}; y < vec_.size(); ++y) {
-		for (size_t x{}; x < vec_[y].size(); ++x) {
-			switch (vec_[y][x])
-			{
-			case dtl::outside_wall_id:DrawBox((int)x * hachi, (int)y * hachi, (int)(x + 1) * hachi, (int)(y + 1) * hachi, GetColor(47, 104, 173), TRUE); break;
-			case dtl::inside_wall_id:DrawBox((int)x * hachi, (int)y * hachi, (int)(x + 1) * hachi, (int)(y + 1) * hachi, GetColor(192, 192, 192), TRUE); break;
-			case dtl::room_id:DrawBox((int)x * hachi, (int)y * hachi, (int)(x + 1) * hachi, (int)(y + 1) * hachi, GetColor(63, 155, 76), TRUE); break;
-			case dtl::entrance_id:DrawBox((int)x * hachi, (int)y * hachi, (int)(x + 1) * hachi, (int)(y + 1) * hachi, GetColor(63, 55, 76), TRUE); break;
-			case  dtl::way_id:DrawBox((int)x * hachi, (int)y * hachi, (int)(x + 1) * hachi, (int)(y + 1) * hachi, GetColor(163, 155, 76), TRUE); break;
-			default: DrawBox((int)x * hachi, (int)y * hachi, (int)(x + 1) * hachi, (int)(y + 1) * hachi, GetColor(47, 104, 173), TRUE); break;
+int main() {
+
+	using shape_t = int;
+	std::array<std::array<shape_t, 32>, 24> matrix{ {} };
+
+	dtl::shape::RogueLike<shape_t>(0, 1, 2, 3, 4, 20,
+		dtl::base::MatrixRange(3, 3, 2, 2),
+		dtl::base::MatrixRange(3, 3, 4, 4)).draw(matrix);
+
+	for (const auto& i : matrix) {
+		for (const auto& j : i)
+			std::cout << j << ',';
+		std::cout << '\n';
+	}
+
+	for (const auto& i : matrix) {
+		for (const auto& j : i)
+			switch (j) {
+			case 0:std::cout << "%%"; break;
+			case 1:std::cout << "##"; break;
+			case 2:std::cout << "  "; break;
+			case 3:std::cout << "++"; break;
+			case 4:std::cout << "--"; break;
 			}
-		}
+		std::cout << '\n';
 	}
-}
 
-//‰¡‰æ–ÊƒTƒCƒY
-constexpr std::int_fast32_t window_map_size_x{ 512 };
-
-//c‰æ–ÊƒTƒCƒY
-constexpr std::int_fast32_t window_map_size_y{ 256 };
-
-//ƒƒCƒ“ƒ‹[ƒv
-bool mainLoop() {
-	return (ScreenFlip() == 0 && ProcessMessage() == 0 && CheckHitKey(KEY_INPUT_ESCAPE) == 0);
-}
-
-void VMain() {
-	//ƒ}ƒbƒvŠi”[”z—ñ
-	std::vector<std::vector<uint8_t>> col(window_map_size_y, std::vector<uint8_t>(window_map_size_x, 0));
-	//ƒ{ƒƒmƒC}‚ğü‰æ
-	dtl::RogueLike<uint8_t> diagram(col, 20);
-	//XVŠÔ
-	constexpr std::int_fast32_t max_time{ 20 };
-	std::int_fast32_t now_time{ max_time };
-	while (mainLoop()) {
-		if (++now_time < max_time) continue;
-
-		for (auto&& i : col)
-			for (auto&& j : i) j = 0;
-
-		diagram.create(col, 200);
-		ClearDrawScreen();
-		output(col);
-		now_time = 0;
-
-		ScreenFlip();
-	}
-		WaitKey();
-}
-
-//‘Oˆ—ŠÖ”
-int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, std::int_fast32_t) {
-	SetOutApplicationLogValidFlag(FALSE);
-	ChangeWindowMode(TRUE);
-	SetGraphMode(window_map_size_x*2, window_map_size_y*2, 32);
-	DxLib_Init();
-	SetDrawScreen(DX_SCREEN_BACK);
-	SetMainWindowText("Voronoi");
-	VMain();
-	return DxLib_End();
+	return 0;
 }
