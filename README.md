@@ -1,9 +1,11 @@
-﻿# [RogueLike(Dungeon Template Library) ](https://github.com/Kasugaccho/DungeonTemplateLibrary) [![BSL-1.0](https://img.shields.io/badge/license-BSL--1.0-blue.svg)](https://github.com/Kasugaccho/DungeonTemplateLibrary/blob/master/LICENSE_1_0.txt)
+# [Roguelike(Dungeon Template Library) ](https://github.com/Kasugaccho/DungeonTemplateLibrary) [![BSL-1.0](https://img.shields.io/badge/license-BSL--1.0-blue.svg)](https://github.com/Kasugaccho/DungeonTemplateLibrary/blob/master/LICENSE_1_0.txt)
 
 
 [![Logo-GIF](https://kasugaccho.github.io/DungeonPicture/Picture/Logo/logo_color800_2.gif)](https://github.com/Kasugaccho/DungeonTemplateLibrary)
 
-# Support Compiler 🔧
+---
+
+# Supported Compilers 🔧
 
 |Compiler|Run|
 |:---|:---|
@@ -11,10 +13,14 @@
 |GCC|[Wandbox](https://wandbox.org/permlink/mh9FPcIeSE4UyPkL)|
 |Clang|[Wandbox](https://wandbox.org/permlink/rH99RSoLGXrDu8CU)|
 
+---
+
 # Overview 💬
 
 ![rl1](https://Kasugaccho.github.io/DungeonPicture/Picture/Dungeon/nrl256.gif) 
 ![rl2](https://Kasugaccho.github.io/DungeonPicture/Picture/Dungeon/nrl_player256.gif)
+
+---
 
 # Example
 
@@ -105,7 +111,9 @@ int main() {
 %%%%%%%%%%%%%%%%%%%%%%%%%%############%%%%%%%%%%##########%%%%%%
 ```
 
-## [License 💳](https://github.com/Kasugaccho/DungeonTemplateLibrary/blob/master/LICENSE_1_0.txt)
+---
+
+# [License 💳](https://github.com/Kasugaccho/DungeonTemplateLibrary/blob/master/LICENSE_1_0.txt)
 
 [>> View License 💳](https://github.com/Kasugaccho/DungeonTemplateLibrary/blob/master/LICENSE_1_0.txt)
 
@@ -116,8 +124,8 @@ Distributed under the Boost Software License, Version 1.0.(See accompanying file
 
 ---
 
-## Contact 📮
+# Related Items 🎮
 
-|E-mail:|wanotaitei@gmail.com|
-|:---|:---|
-|![svg](https://Kasugaccho.github.io/DungeonPicture/Picture/as_logo.svg)|Made by **As Project**.|
+[![DTL](https://raw.githubusercontent.com/Kasugaccho/Kasugaccho/master/Picture/dungeon_template_library.png)](https://github.com/Kasugaccho/DungeonTemplateLibrary)
+[![GenkaiSyuraku](https://raw.githubusercontent.com/Kasugaccho/Kasugaccho/master/Picture/genkai_syuraku.png)](https://github.com/Kasugaccho/GenkaiSyuraku)
+[![AsLib](https://raw.githubusercontent.com/Kasugaccho/Kasugaccho/master/Picture/aslib.png)](https://github.com/Kasugaccho/AsLib)
