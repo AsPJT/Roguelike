@@ -1,6 +1,4 @@
-# [Roguelike (Dungeon Template Library) ](https://github.com/Kasugaccho/DungeonTemplateLibrary) [![BSL-1.0](https://img.shields.io/badge/license-BSL--1.0-blue.svg)](https://github.com/Kasugaccho/DungeonTemplateLibrary/blob/master/LICENSE_1_0.txt)
-
-[![Logo-GIF](https://kasugaccho.github.io/DungeonPicture/Picture/Logo/logo_color800_2.gif)](https://github.com/Kasugaccho/DungeonTemplateLibrary)
+# [Roguelike (Dungeon Template Library) ](https://github.com/AsPJT/DungeonTemplateLibrary) [![BSL-1.0](https://img.shields.io/badge/license-BSL--1.0-blue.svg)](https://github.com/AsPJT/DungeonTemplateLibrary/blob/master/LICENSE_1_0.txt)
 
 ---
 
@@ -16,8 +14,8 @@
 
 # Generated Image 🖼️
 
-![rl1](https://Kasugaccho.github.io/DungeonPicture/Picture/Dungeon/nrl256.gif) 
-![rl2](https://Kasugaccho.github.io/DungeonPicture/Picture/Dungeon/nrl_player256.gif)
+![rl1](https://AsPJT.github.io/DungeonPicture/Picture/Dungeon/nrl256.gif) 
+![rl2](https://AsPJT.github.io/DungeonPicture/Picture/Dungeon/nrl_player256.gif)
 
 ---
 
@@ -112,11 +110,11 @@ int main() {
 
 ---
 
-# [License 💳](https://github.com/Kasugaccho/DungeonTemplateLibrary/blob/master/LICENSE_1_0.txt)
+# [License 💳](https://github.com/AsPJT/DungeonTemplateLibrary/blob/master/LICENSE_1_0.txt)
 
-[>> View License 💳](https://github.com/Kasugaccho/DungeonTemplateLibrary/blob/master/LICENSE_1_0.txt)
+[>> View License 💳](https://github.com/AsPJT/DungeonTemplateLibrary/blob/master/LICENSE_1_0.txt)
 
-Copyright (c) 2017-2019 Kasugaccho.
+Copyright (c) 2017-2019 AsPJT.
 Copyright (c) 2018-2019 As Project.
 
 Distributed under the Boost Software License, Version 1.0.(See accompanying file LICENSE_1_0.txt or copy at http://www.boost.org/LICENSE_1_0.txt)
@@ -125,6 +123,6 @@ Distributed under the Boost Software License, Version 1.0.(See accompanying file
 
 # Related Items 🎮
 
-[![DTL](https://raw.githubusercontent.com/Kasugaccho/Kasugaccho/master/Picture/dungeon_template_library.png)](https://github.com/Kasugaccho/DungeonTemplateLibrary)
-[![GenkaiSyuraku](https://raw.githubusercontent.com/Kasugaccho/Kasugaccho/master/Picture/genkai_syuraku.png)](https://github.com/Kasugaccho/GenkaiSyuraku)
-[![AsLib](https://raw.githubusercontent.com/Kasugaccho/Kasugaccho/master/Picture/aslib.png)](https://github.com/Kasugaccho/AsLib)
+[![DTL](https://raw.githubusercontent.com/AsPJT/AsPJT/master/Picture/dungeon_template_library.png)](https://github.com/AsPJT/DungeonTemplateLibrary)
+[![GenkaiSyuraku](https://raw.githubusercontent.com/AsPJT/AsPJT/master/Picture/genkai_syuraku.png)](https://github.com/AsPJT/GenkaiSyuraku)
+[![AsLib](https://raw.githubusercontent.com/AsPJT/AsPJT/master/Picture/aslib.png)](https://github.com/AsPJT/AsLib)
