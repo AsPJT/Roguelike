@@ -1570,6 +1570,11 @@ namespace dtl {
 				case direction_west:dx = 1; break;
 				case direction_east:dx = -1; break;
 				}
+				
+				if (this->start_x + x + dx < 0 || this->start_x + x + dx >= size_x || this->start_y + y + dy < 0 ||
+				    this->start_y + y + dy >= size_y) {
+					return false;
+				}
 
 				if (matrix_.get(this->start_x + x + dx, this->start_y + y + dy) != this->rogueLikeList.room_id && matrix_.get(this->start_x + x + dx, this->start_y + y + dy) != this->rogueLikeList.way_id)return false;
 				if (!is_way_) {
