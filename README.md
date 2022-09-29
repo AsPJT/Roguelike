@@ -114,8 +114,8 @@ int main() {
 
 [>> View License 💳](https://github.com/AsPJT/DungeonTemplateLibrary/blob/master/LICENSE_1_0.txt)
 
-Copyright (c) 2017-2019 AsPJT.
-Copyright (c) 2018-2019 As Project.
+Copyright (c) 2017-2022 AsPJT.
+Copyright (c) 2018-2022 As Project.
 
 Distributed under the Boost Software License, Version 1.0.(See accompanying file LICENSE_1_0.txt or copy at http://www.boost.org/LICENSE_1_0.txt)
 
